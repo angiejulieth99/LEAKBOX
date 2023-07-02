@@ -1,0 +1,177 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	background:rgb(13, 163, 156);
+	height: 70px;
+	position: fixed;
+	z-index: 1000;
+	
+}
+
+header p {
+	float: left;
+	display:none;
+}
+
+.foto-mini {
+	margin-left: 50px;
+	padding: 5px;
+	float: left;
+	width: 10%;
+	
+}
+
+.foto {
+	
+	width: 60px;
+	height: 60px;
+	border-radius:  50px;
+	border: 5px solid rgb(13, 163, 156);
+	
+}
+
+
+
+
+
+
+
+
+#menu {
+	
+	margin-top: 13px;
+	padding: 5px 3px 5px 3px;
+	color:black;
+	font-size: 26px;
+	
+	float:right;
+	cursor: pointer;
+	border-radius: 4px;
+	display: none;
+}
+
+label {
+	display: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus{
+	outline:0 none ;
+}
+
+
+@media (max-width:991px){
+	
+	header{
+		padding: 0 20px;
+	}
+	
+	#menu {
+		display: block;
+	}
+	.sitenav{
+		width:100%;
+		position: absolute;
+		top:60px; 
+		left:-100%; 
+		transition:0.5s ease-out; 
+	}
+	
+	.sitenav-open{
+		left:0%; 
+	}
+	
+	.sitenav ul{
+		display: block;
+	}
+	
+	.sitenav li{
+		width:100%;
+		text-align: center;
+		background: yellow;
+	}
+	
+	.sitenav li:hover{
+		background: rgb(101, 1, 131);
+		color: yellow;
+		
+	}
+	
+	header nav {
+		/*display: none;*/
+		
+		position: absolute;
+		width: 80%;
+		height: 100vh;
+		
+		left: -100%;
+		top: 70px;
+		
+		background: rgb(60, 100, 133);
+		transition: 0.5s;
+	}
+	
+	header nav.active{
+		left:0%;
+	}
+	
+	header nav ul{
+		
+		display: block;
+		text-align: center;
+	}
+	
+	
+	header nav ul li a{
+		border-bottom: 1px solid rgba(228,228,228,0.6);
+		text-align: left;
+		padding-left: 10px;
+		font-size: 16px;
+		
+	}
+	
+	label {
+		display: inline-block;
+		padding-right: 15px;
+		font-size: 20px;
+		
+	}
+	
+	.icon-inicio:hover, .icon-nosotros:hover, .icon-porta:hover, .icon-servicios:hover, .icon-conatcto:hover {
+		
+		color: rgba(212,158,1,1.00);
+		
+	}
+	
+	
+
+}
+/*Media Querie*/
+
+@media (max-width:500px) {
+	
+	.foto-mini {
+		display: none;
+	}
+	
+	
+	header p {
+	float: left;
+	display:block;
+		line-height: 65px;
+		color:white;
+		font-size: 26px;
+		font-family: 'helvetica'
+		}
+	
+}
+
+
+
+
+

@@ -1,0 +1,174 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior:smooth;	
+}
+
+.art-contenedor h2 {
+	align-content: center;
+	
+	padding-top: 15px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	
+}
+.art-contenedor hr{
+	width: 30%;
+	border: 1px solid rgb(25, 137, 141);
+	margin: 5px auto;
+}
+
+.art-contenedor {
+	padding: 20px;
+	align-items: center;
+	align-content: center;
+	height:700px;
+	background:white;
+}
+
+
+.imagen{
+	padding-top: 15px;
+	width: 65%;
+	height: 500px;
+	float: left;
+
+}
+
+
+.img-cont {
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+	height: 500px;
+}
+
+.form {
+	align-content: center;
+	margin-top: 26px;
+	width: 33%;
+	float: right;
+	padding: 10px;
+	
+	background: url( ../img/sd.jpg);
+}
+
+
+.form h2 {
+	text-align: center;
+	font-size: 18px;
+}
+
+.form h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.form p{
+	font-size: 13px;
+}
+
+input[type="text"],input[type="email"],input[type="number"] {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	width: 100%;
+	height: 30px;
+	border-radius: 3px;
+	 border: 0;
+	 border: 1px solid  rgb(167, 167, 167);
+}
+
+textarea {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	 border: 0;
+	 border: 1px solid  rgb(25, 137, 141);
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+input[name="envio"]{
+	width: 30%;
+	height: 35px;
+	background:  rgb(25, 137, 141);
+	 border:0;
+	border-radius: 4px;
+	color: rgb(73, 35, 73);
+	cursor: pointer;
+	display: block;
+	margin: auto;
+}
+
+
+input[name="envio"]:hover{
+
+	color: rgb(25, 137, 141);
+	background: rgb(105, 13, 167);
+	 border:0;
+}
+
+
+@media (max-width:991px){
+	
+	.art-contenedor{
+width: 100%;
+			height: 850px;
+		
+	
+		}
+
+		
+.imagen{
+	width: 100%;
+	height: 200px;
+	
+}
+.img-cont {
+    width: 100%;
+    height: 200px;
+}
+	
+.form {
+	align-content: center;
+	width: 100%;
+	
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width:480px) and (max-width:780px){
+	
+	
+	.img-cont {
+    width: 100%;
+    height: 200px;
+}
+	.form {
+	width: 100%;
+	
+}
+
+	.imagen{
+	width: 100%;
+		height: 200px;
+	
+}
+	.art-contenedor{
+	width: 100%;
+	
+	}
+
+
+
+	}
